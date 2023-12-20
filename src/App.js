@@ -7,7 +7,6 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Project1 from './components/Project1'; // Import the new component
 import GlobalStyles from './GlobalStyles';
-// import BeholdMyBrillianceButton from './components/BeholdMyBrillianceButton';
 import ProfessionalPage from './components/ProfessionalPage';
 import styled, { keyframes } from 'styled-components';
 import { AiFillHome, AiOutlineUser, AiOutlineProject, AiOutlineMail } from 'react-icons/ai';
@@ -72,20 +71,20 @@ function App() {
 
         <Navigation>
           <ul>
-            <li><Link to="/"><AiFillHome /> Home</Link></li>
-            <li><Link to="/about"><AiOutlineUser /> About</Link></li>
-            <li><Link to="/projects"><AiOutlineProject /> Projects</Link></li>
-            <li><Link to="/contact"><AiOutlineMail /> Contact</Link></li>
+            <li><Link to="/portfolio-react"><AiFillHome /> Home</Link></li>
+            <li><Link to="/portfolio-react/about"><AiOutlineUser /> About</Link></li>
+            <li><Link to="/portfolio-react/projects"><AiOutlineProject /> Projects</Link></li>
+            <li><Link to="/portfolio-react/contact"><AiOutlineMail /> Contact</Link></li>
           </ul>
         </Navigation>
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/professional" element={<ProfessionalPage />} />
-          <Route path="/project1" element={<Project1 />} /> {/* Add this route */}
+          <Route path="/portfolio-react/" element={<Home />} />
+          <Route path="/portfolio-react/about" element={<About />} />
+          <Route path="/portfolio-react/projects" element={<Projects />} />
+          <Route path="/portfolio-react/contact" element={<Contact />} />
+          <Route path="/portfolio-react/professional" element={<ProfessionalPage />} />
+          <Route path="/portfolio-react/project1" element={<Project1 />} /> {/* Add this route */}
         </Routes>
       </div>
     </Router>

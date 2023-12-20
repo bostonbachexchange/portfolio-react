@@ -16,11 +16,13 @@ const fadeIn = keyframes`
 `;
 
 const HomeContainer = styled.section`
-  background: linear-gradient(45deg, #2d2d2d, #1f1f1f);
-  color: #61dafb;
+  background: linear-gradient(45deg, #1f1f1f, #2d2d2d);
+  color: #ffffff;
   padding: 80px;
   text-align: center;
   animation: ${fadeIn} 2s ease;
+  position: relative;
+  overflow: hidden;
 `;
 
 const Title = styled.h2`
@@ -61,6 +63,7 @@ const GraphicLinks = styled.div`
   }
 `;
 
+
 const InteractiveElement = styled.div`
   position: relative;
   margin-top: 60px;
@@ -93,7 +96,7 @@ const Home = () => (
   <HomeContainer>
     <Title>Welcome to My Professional Portfolio</Title>
     <Description>
-      Hello, I'm [Your Name]. As a seasoned front-end developer, I'm dedicated to creating
+      Hello, I'm Jacob. As a seasoned front-end developer, I'm dedicated to creating
       exceptional and user-friendly web experiences.
     </Description>
     <ProfessionalButton />
@@ -110,85 +113,3 @@ const Home = () => (
 );
 
 export default Home;
-
-
-
-
-// // components/Home.js
-
-
-
-// const HomeContainer = styled.div`
-//   background: linear-gradient(45deg, #1f1f1f, #2d2d2d);
-//   color: #ffffff;
-//   padding: 80px;
-//   text-align: center;
-//   animation: ${fadeIn} 2s ease;
-//   position: relative;
-//   overflow: hidden;
-// `;
-
-// const Title = styled.h1`
-//   font-size: 6em;
-//   margin-bottom: 30px;
-//   color: #61dafb;
-//   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-// `;
-
-// const Description = styled.p`
-//   font-size: 2.5em;
-//   line-height: 1.5;
-//   color: #ffffff;
-//   margin-bottom: 50px;
-// `;
-
-// const InteractiveElement = styled.div`
-//   position: relative;
-//   margin-top: 60px;
-
-//   &:before,
-//   &:after {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background: rgba(97, 218, 251, 0.2);
-//     z-index: -1;
-//     border-radius: 20px;
-//     box-shadow: 0 0 50px rgba(97, 218, 251, 0.5);
-//     transition: transform 0.5s ease;
-//   }
-
-//   &:hover:before {
-//     transform: rotate(10deg) scale(1.2);
-//   }
-
-//   &:hover:after {
-//     transform: rotate(-10deg) scale(1.2);
-//   }
-// `;
-
-// const Home = () => (
-//   <HomeContainer>
-//     <Title>Welcome to My Portfolio</Title>
-//     <Description>
-//       Explore my skills and projects. Let's create something amazing together!
-//     </Description>
-//     <InteractiveElement />
-
-//     {/* Contact Me Section */}
-//     <Contact />
-
-//     {/* Additional Sections, Projects, Skills, etc. */}
-//     {/* Add your additional content here, such as project showcases, skills, etc. */}
-
-//     {/* Navigation to Other Pages */}
-//     <Link to="/about">Learn More About Me</Link>
-//     <Link to="/projects">Check Out My Projects</Link>
-//     <Link to="/contact">Get in Touch</Link>
-//   </HomeContainer>
-// );
-
-// export default Home;

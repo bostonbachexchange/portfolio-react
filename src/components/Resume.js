@@ -1,6 +1,7 @@
 // components/Resume.js
 import React from 'react';
 import styled from 'styled-components';
+import resumepdf from '../assets/Resume-Software-Engineer.pdf';
 
 const ResumeContainer = styled.div`
   background: #2d2d2d;
@@ -31,9 +32,6 @@ const DownloadLink = styled.a`
   }
 `;
 
-// components/Resume.js
-// ... (previous code)
-
 const ExperienceSection = styled.div`
   margin-top: 40px;
 `;
@@ -52,7 +50,7 @@ const ExperienceDetails = styled.p`
 const Resume = () => (
   <ResumeContainer>
     <ResumeTitle>Download My Resume</ResumeTitle>
-    <DownloadLink href="/path/to/your/resume.pdf" download="YourResume.pdf">
+    <DownloadLink href={resumepdf} download="Resume-Software-Engineer.pdf">
       Download PDF
     </DownloadLink>
 
@@ -63,19 +61,6 @@ const Resume = () => (
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </ExperienceDetails>
     </ExperienceSection>
-
-    {/* Add more sections for Education, Projects, etc. */}
-  {/* </ResumeContainer>
-); */}
-
-{/* // export default Resume;
-
-// const Resume = () => ( */}
-{/* //   <ResumeContainer> */}
-    <ResumeTitle>Download My Resume</ResumeTitle>
-    <DownloadLink href="/path/to/your/resume.pdf" download="YourResume.pdf">
-      Download PDF
-    </DownloadLink>
   </ResumeContainer>
 );
 

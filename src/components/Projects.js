@@ -3,6 +3,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { AiFillProject, AiFillGithub } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import { getBaseUrl } from './utils/baseUrl';
 
 const fadeIn = keyframes`
   from {
@@ -132,7 +133,7 @@ const projectsData = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     technologies: 'React, Node.js, MongoDB',
     githubLink: 'https://github.com/yourusername/project1',
-    projectLink: '/project1',
+    projectLink: `${getBaseUrl()}/portfolio-react/project1`,
   },
   {
     title: 'Project 2',

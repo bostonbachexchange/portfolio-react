@@ -24,7 +24,7 @@ const ProfessionalButton = () => {
 
   const handleClick = () => {
     // Navigate to the ProfessionalPage when clicked
-    navigate('/professional');
+    navigate('/portfolio-react/professional');
   };
 
   return <Button onClick={handleClick}>Explore My Professional Work</Button>;

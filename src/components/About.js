@@ -73,7 +73,7 @@ const About = () => (
     <Title>Get to Know Me</Title>
     <BrainIcon />
     <Description>
-      Welcome to my brain hub! I'm [Your Name], a passionate and creative front-end developer
+      Welcome to my brain hub! I'm Jacob, a passionate and creative front-end developer
       with a knack for turning ideas into reality. My journey in the world of coding has been
       nothing short of exciting, and I'm always hungry to learn and grow.
     </Description>
