@@ -101,10 +101,10 @@ const Home = () => (
     </Description>
     <ProfessionalButton />
     <GraphicLinks>
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/bostonbachexchange" target="_blank" rel="noopener noreferrer">
         <AiFillCode /> GitHub
       </a>
-      <a href="https://www.linkedin.com/in/yourusername/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/jacob-clapper/" target="_blank" rel="noopener noreferrer">
         <AiFillCode /> LinkedIn
       </a>
     </GraphicLinks>

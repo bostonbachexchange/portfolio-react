@@ -192,13 +192,13 @@ const Contact = () => (
 
     {/* Social Media Links */}
     <SocialLinks>
-      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/jacob-clapper/" target="_blank" rel="noopener noreferrer">
         <FaLinkedin />
       </a>
-      <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+      {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
         <FaTwitter />
-      </a>
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+      </a> */}
+      <a href="https://github.com/bostonbachexchange" target="_blank" rel="noopener noreferrer">
         <FaGithub />
       </a>
     </SocialLinks>
