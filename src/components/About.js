@@ -73,9 +73,7 @@ const About = () => (
     <Title>Get to Know Me</Title>
     <BrainIcon />
     <Description>
-      Welcome to my brain hub! I'm Jacob, a passionate and creative front-end developer
-      with a knack for turning ideas into reality. My journey in the world of coding has been
-      nothing short of exciting, and I'm always hungry to learn and grow.
+      As a creative, focused, and diligent Software Engineer, I strive to develop full stack applications that are intuitive and efficient. My background as a teacher with a Master's of Music degree with a concentration in Piano Performance has given me the ability to manage and prioritize multiple obligations. I have developed necessary communication skills to collaborate as a team and also work independently. It is with this experience that I am able to build creative solutions that build community and increase productivity.
     </Description>
     <InteractiveElement />
   </AboutContainer>

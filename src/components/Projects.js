@@ -3,6 +3,8 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { AiFillProject, AiFillGithub } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+// import ProjectPage from './ProjectPage';
+import { projectsData } from './projectsData';
 import { getBaseUrl } from './utils/baseUrl';
 
 const fadeIn = keyframes`
@@ -127,36 +129,57 @@ const InteractiveElement = styled.div`
   }
 `;
 
-const projectsData = [
-  {
-    title: 'Project 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    technologies: 'React, Node.js, MongoDB',
-    githubLink: 'https://github.com/yourusername/project1',
-    projectLink: `${getBaseUrl()}/portfolio-react/project1`,
-  },
-  {
-    title: 'Project 2',
-    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    technologies: 'Vue.js, Express, PostgreSQL',
-    githubLink: 'https://github.com/yourusername/project2',
-    projectLink: '/project2',
-  },
-  {
-    title: 'Project 3',
-    description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-    technologies: 'Angular, Spring Boot, MySQL',
-    githubLink: 'https://github.com/yourusername/project3',
-    projectLink: '/project3',
-  },
-  {
-    title: 'Project 4',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.',
-    technologies: 'React Native, Express, Firebase',
-    githubLink: 'https://github.com/yourusername/project4',
-    projectLink: '/project4',
-  },
-];
+// const projectsData = [
+//   {
+//     title: 'Musician Page',
+//     description: 'Professional Musician Bio and Blog Page',
+//     technologies: 'React, Node.js, MongoDB, Express',
+//     githubLink: 'https://github.com/yourusername/project1',
+//     projectLink: `${getBaseUrl()}/portfolio-react/project1`,
+//   },
+//   {
+//     title: 'First Piano Lesson',
+//     description: 'Professional Musician Bio and Blog Page',
+//     technologies: 'React, Node.js',
+//     githubLink: 'https://github.com/bostonbachexchange/first-lesson',
+//     projectLink: `https://bostonbachexchange.github.io/first-lesson/`,
+//   },
+//   {
+//     title: 'Workout App Tracker',
+//     description: 'A cross-platform mobile app built with React Native and Expo, designed for easy workout tracking. Log your workouts, compare progress, and share your fitness journey with others.',
+//     technologies: 'React Native, Expo, Yarn, SQLite',
+//     githubLink: 'https://github.com/EfrainAD/Workout-App',
+//     projectLink: '',
+//   },
+//   {
+//     title: 'Scattler Plot Viz',
+//     description: "This is a React project that fetches cyclist data from a JSON file and visualizes it using a scatter plot. The data is sourced from freeCodeCamp and represents the 35 fastest times up Alpe d'Huez.",
+//     technologies: 'React, D3',
+//     githubLink: 'https://github.com/bostonbachexchange/scatter-plot-bicycle',
+//     projectLink: 'https://bostonbachexchange.github.io/scatter-plot-bicycle/',
+//   },
+//   {
+//     title: 'GDP Bar Chart',
+//     description: 'This React application fetches GDP data from a JSON file and visualizes it using a bar chart. The data is sourced from [freeCodeCamp](https://www.freecodecamp.org/), and the chart displays the GDP data over time.',
+//     technologies: 'React, D3',
+//     githubLink: 'https://github.com/bostonbachexchange/usa-gdp-bar-chart',
+//     projectLink: 'https://bostonbachexchange.github.io/usa-gdp-bar-chart/',
+//   },
+//   {
+//     title: 'Inflation Bar Chart',
+//     description: 'This React application fetches GDP data from a JSON file and visualizes it using a bar chart. The data is sourced from [freeCodeCamp](https://www.freecodecamp.org/), and the chart displays the GDP data over time.',
+//     technologies: 'React, D3',
+//     githubLink: 'https://github.com/bostonbachexchange/data-vis-bar-chart',
+//     projectLink: 'https://bostonbachexchange.github.io/data-vis-bar-chart/',
+//   },
+//   {
+//     title: 'Memory Game',
+//     description: 'Immerse yourself in this interactive music memory game built with JavaScript. Match composers, rhythms, and musical elements while enjoying the soothing tunes of classical masterpieces.',
+//     technologies: 'Vanilla JavaScript, Html, Css',
+//     githubLink: 'https://github.com/bostonbachexchange/project_1',
+//     projectLink: 'https://bostonbachexchange.github.io/project_1/',
+//   },
+// ];
 
 const Projects = () => (
   <ProjectsContainer>
@@ -170,7 +193,7 @@ const Projects = () => (
           <Technologies>{project.technologies}</Technologies>
           <ProjectDetails>
             <ProjectLink to={project.projectLink}>View Project</ProjectLink>
-            <ProjectLink to={project.projectLink}>
+            <ProjectLink to={project.githubLink}>
               <GithubIcon />
               GitHub
             </ProjectLink>
@@ -179,6 +202,7 @@ const Projects = () => (
       ))}
     </ProjectsGrid>
     <InteractiveElement />
+    
   </ProjectsContainer>
 );
 

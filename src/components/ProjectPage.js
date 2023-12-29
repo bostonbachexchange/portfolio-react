@@ -1,8 +1,6 @@
-// components/Project1.js
+// components/ProjectPage.js
 import React from 'react';
 import styled from 'styled-components';
-import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
-// import project1Image from '../images/project1.jpg'; // Import your project image
 
 const ProjectContainer = styled.div`
   background: #2d2d2d;
@@ -68,38 +66,41 @@ const EmbeddedProject = styled.div`
   }
 `;
 
-const Project1 = () => (
+const ProjectPage = ({ title, description, technologies, deployLink, frontendLink, backendLink }) => (
   <ProjectContainer>
-    <ProjectTitle>Project 1</ProjectTitle>
-    <ProjectDescription>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. HAHAHA
-    </ProjectDescription>
-    <Technologies>Technologies: React, Node.js, MongoDB</Technologies>
+    <ProjectTitle>{title}</ProjectTitle>
+    <ProjectDescription>{description}</ProjectDescription>
+    <Technologies>{technologies}</Technologies>
 
     {/* Project Links */}
     <ProjectLinks>
-      <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer">
-        <AiFillGithub /> GitHub
-      </a>
-      <a href="https://example.com/project1" target="_blank" rel="noopener noreferrer">
-        <AiOutlineLink /> View Project
-      </a>
+      {frontendLink && (
+        <a href={frontendLink} target="_blank" rel="noopener noreferrer">
+          View Project
+        </a>
+      )}
+      {backendLink && (
+        <a href={backendLink} target="_blank" rel="noopener noreferrer">
+          View Backend
+        </a>
+      )}
+      {deployLink && (
+        <a href={deployLink} target="_blank" rel="noopener noreferrer">
+          Deployed Project
+        </a>
+      )}
     </ProjectLinks>
 
     {/* Project Image */}
-    {/* <ProjectImage src={project1Image} alt="Project 1" /> */}
+    {/* <ProjectImage src={projectImage} alt={title} /> */}
 
     {/* Embedded Project */}
     <EmbeddedProject>
-      <iframe
-        src="https://jacobclapper.com" // Replace with the actual URL of your deployed project
-        title="Embedded Project"
-        allow="fullscreen"
-      ></iframe>
+      {deployLink && <iframe src={deployLink} title={title} allow="fullscreen"></iframe>}
     </EmbeddedProject>
 
     {/* Add more sections or components to showcase your project details */}
   </ProjectContainer>
 );
 
-export default Project1;
+export default ProjectPage;

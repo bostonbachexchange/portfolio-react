@@ -10,6 +10,8 @@ import GlobalStyles from './GlobalStyles';
 import ProfessionalPage from './components/ProfessionalPage';
 import styled, { keyframes } from 'styled-components';
 import { AiFillHome, AiOutlineUser, AiOutlineProject, AiOutlineMail } from 'react-icons/ai';
+import { projectsData } from './components/projectsData';
+import ProjectPage from './components/ProjectPage';
 
 const bounce = keyframes`
   0%, 20%, 50%, 80%, 100% {
@@ -79,12 +81,20 @@ function App() {
         </Navigation>
 
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/portfolio-react/" element={<Home />} />
           <Route path="/portfolio-react/about" element={<About />} />
           <Route path="/portfolio-react/projects" element={<Projects />} />
           <Route path="/portfolio-react/contact" element={<Contact />} />
           <Route path="/portfolio-react/professional" element={<ProfessionalPage />} />
-          <Route path="/portfolio-react/project1" element={<Project1 />} /> {/* Add this route */}
+          {/* <Route path="/portfolio-react/project1" element={<Project1 />} />  */}
+          {projectsData.map((project, index) => (
+        <Route
+          key={index}
+          path={project.projectLink}
+          element={<ProjectPage {...project} />}
+        />
+      ))}
         </Routes>
       </div>
     </Router>

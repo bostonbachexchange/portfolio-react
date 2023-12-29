@@ -58,7 +58,7 @@ const Resume = () => (
     <ExperienceSection>
       <ExperienceTitle>Software Engineer</ExperienceTitle>
       <ExperienceDetails>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      I'm a full stack developer, pianist, and teacher who is motived to use software development to foster learning and creativity. My work as a collaborative musician has given me an appreciation for artistic achievement, admiration for those who help others, and the value of working as a team. I aspire to build solutions to support and inspire communities and individuals. My goal is to collaborate with a full stack development team and to work with others who are inspired to build engaging applications.
       </ExperienceDetails>
     </ExperienceSection>
   </ResumeContainer>
