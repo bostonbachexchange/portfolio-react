@@ -24,8 +24,6 @@ Welcome to my portfolio! This project showcases my skills as a software engineer
 - React
 - Styled Components
 - React Router
-- D3.js (for the chart in the original code)
-- ... (add any other technologies you've used)
 
 ## Getting Started
 
