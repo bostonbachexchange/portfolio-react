@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/portfolio-react/static/js/main.92f7a962.chunk.js",
-    "main.js.map": "/portfolio-react/static/js/main.92f7a962.chunk.js.map",
-    "runtime-main.js": "/portfolio-react/static/js/runtime-main.7f72511f.js",
-    "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.7f72511f.js.map",
-    "static/js/2.b1d175e2.chunk.js": "/portfolio-react/static/js/2.b1d175e2.chunk.js",
-    "static/js/2.b1d175e2.chunk.js.map": "/portfolio-react/static/js/2.b1d175e2.chunk.js.map",
-    "static/js/3.a8aac0ea.chunk.js": "/portfolio-react/static/js/3.a8aac0ea.chunk.js",
-    "static/js/3.a8aac0ea.chunk.js.map": "/portfolio-react/static/js/3.a8aac0ea.chunk.js.map",
-    "index.html": "/portfolio-react/index.html",
-    "precache-manifest.3046eb33200c158df21387301e05f12e.js": "/portfolio-react/precache-manifest.3046eb33200c158df21387301e05f12e.js",
-    "service-worker.js": "/portfolio-react/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/portfolio-react/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.b1d175e2.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.b1d175e2.chunk.js.LICENSE.txt",
-    "static/media/Resume-Software-Engineer.pdf": "/portfolio-react/static/media/Resume-Software-Engineer.3e274b9c.pdf"
+    "main.css": "/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/static/js/main.92f7a962.chunk.js",
+    "main.js.map": "/static/js/main.92f7a962.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b25cbd29.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b25cbd29.js.map",
+    "static/js/2.45f20957.chunk.js": "/static/js/2.45f20957.chunk.js",
+    "static/js/2.45f20957.chunk.js.map": "/static/js/2.45f20957.chunk.js.map",
+    "static/js/3.a8aac0ea.chunk.js": "/static/js/3.a8aac0ea.chunk.js",
+    "static/js/3.a8aac0ea.chunk.js.map": "/static/js/3.a8aac0ea.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a71d143014fda073720be376f38eb406.js": "/precache-manifest.a71d143014fda073720be376f38eb406.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.45f20957.chunk.js.LICENSE.txt": "/static/js/2.45f20957.chunk.js.LICENSE.txt",
+    "static/media/Resume-Software-Engineer.pdf": "/static/media/Resume-Software-Engineer.3e274b9c.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.7f72511f.js",
-    "static/js/2.b1d175e2.chunk.js",
+    "static/js/runtime-main.b25cbd29.js",
+    "static/js/2.45f20957.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
     "static/js/main.92f7a962.chunk.js"
   ]
