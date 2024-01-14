@@ -1,8 +1,13 @@
 // components/Contact.js
 import React from 'react';
+import emailjs from 'emailjs-com';
 import styled, { keyframes } from 'styled-components';
 import { AiOutlineMail, AiFillPhone } from 'react-icons/ai';
 import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const fadeIn = keyframes`
   from {
@@ -159,8 +164,38 @@ const SocialLinks = styled.div`
     }
   }
 `;
+const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const userId = process.env.REACT_APP_EMAILJS_USER_ID;
+const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 
-const Contact = () => (
+
+
+
+const Contact = () => {
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+
+    try {
+      const result = await emailjs.sendForm(serviceId, templateId, e.target, userId);
+      console.log(result.text);
+
+      toast.success('Message sent successfully!', {
+        position: toast.POSITION.BOTTOM_CENTER,
+        autoClose: 3000, // Close the notification after 3 seconds
+      });
+
+      e.target.reset(); // Clear the form fields
+    } catch (error) {
+      console.error(error.text);
+
+      toast.error('Error sending message. Please try again.', {
+        position: toast.POSITION.BOTTOM_CENTER,
+        autoClose: 3000,
+      });
+    }
+  };
+  return (
   <ContactContainer>
     {/* Particles */}
     {[...Array(20)].map((_, index) => (
@@ -177,7 +212,7 @@ const Contact = () => (
     <InteractiveElement />
 
     {/* Contact Form */}
-    <ContactForm>
+    <ContactForm onSubmit={sendEmail}>
       <FormLabel htmlFor="name">Name</FormLabel>
       <FormInput type="text" id="name" name="name" required />
 
@@ -202,7 +237,9 @@ const Contact = () => (
         <FaGithub />
       </a>
     </SocialLinks>
+    <ToastContainer />
   </ContactContainer>
-);
+    );
+    };
 
 export default Contact;
