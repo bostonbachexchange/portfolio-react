@@ -16,9 +16,9 @@ const fadeIn = keyframes`
 `;
 
 const HomeContainer = styled.section`
-  background: linear-gradient(45deg, #1f1f1f, #2d2d2d);
+  background: linear-gradient(45deg, #1f1f1f, #3d3d3d);
   color: #ffffff;
-  padding: 80px;
+  padding: 40px;
   text-align: center;
   animation: ${fadeIn} 2s ease;
   position: relative;
@@ -26,8 +26,8 @@ const HomeContainer = styled.section`
 `;
 
 const Title = styled.h2`
-  font-size: 6em;
-  margin-bottom: 30px;
+  font-size: 3em;
+  margin-bottom: 20px;
   color: #61dafb;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 `;

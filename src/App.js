@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './components/Home';
@@ -38,7 +37,7 @@ const Navigation = styled.nav`
     padding: 0;
 
     li {
-      margin-right: 40px;
+      margin-right: 20px; /* Adjust spacing for smaller screens */
 
       &:last-child {
         margin-right: 0;
@@ -47,7 +46,7 @@ const Navigation = styled.nav`
       a {
         color: #61dafb;
         text-decoration: none;
-        font-size: 2.5em;
+        font-size: 2em;
         transition: color 0.3s ease, transform 0.5s ease;
         transform-origin: bottom;
 
@@ -63,6 +62,13 @@ const Navigation = styled.nav`
       }
     }
   }
+
+  @media (max-width: 600px) {
+    ul {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center;
+    }
+  }
 `;
 
 function App() {
@@ -73,28 +79,28 @@ function App() {
 
         <Navigation>
           <ul>
-            <li><Link to="/portfolio-react"><AiFillHome /> Home</Link></li>
-            <li><Link to="/portfolio-react/about"><AiOutlineUser /> About</Link></li>
-            <li><Link to="/portfolio-react/projects"><AiOutlineProject /> Projects</Link></li>
-            <li><Link to="/portfolio-react/contact"><AiOutlineMail /> Contact</Link></li>
+            <li><Link to="/"><AiFillHome /> Home</Link></li>
+            <li><Link to="/about"><AiOutlineUser /> About</Link></li>
+            <li><Link to="/projects"><AiOutlineProject /> Projects</Link></li>
+            <li><Link to="/contact"><AiOutlineMail /> Contact</Link></li>
           </ul>
         </Navigation>
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/portfolio-react/" element={<Home />} />
-          <Route path="/portfolio-react/about" element={<About />} />
-          <Route path="/portfolio-react/projects" element={<Projects />} />
-          <Route path="/portfolio-react/contact" element={<Contact />} />
-          <Route path="/portfolio-react/professional" element={<ProfessionalPage />} />
+          {/* <Route path="/portfolio-react/" element={<Home />} /> */}
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/professional" element={<ProfessionalPage />} />
           {/* <Route path="/portfolio-react/project1" element={<Project1 />} />  */}
           {projectsData.map((project, index) => (
-        <Route
-          key={index}
-          path={project.projectLink}
-          element={<ProjectPage {...project} />}
-        />
-      ))}
+            <Route
+              key={index}
+              path={project.projectLink}
+              element={<ProjectPage {...project} />}
+            />
+          ))}
         </Routes>
       </div>
     </Router>
