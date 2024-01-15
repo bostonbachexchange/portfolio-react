@@ -52,16 +52,20 @@ const Title = styled.h2`
   margin-bottom: 30px;
   color: #61dafb;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+
+  @media (max-width: 600px) {
+    font-size: 1.5em;
+  }
 `;
 
 const MailIcon = styled(AiOutlineMail)`
-  font-size: 3em;
+  font-size: 2.5em;
   color: #61dafb;
   margin-bottom: 20px;
 `;
 
 const PhoneIcon = styled(AiFillPhone)`
-  font-size: 3em;
+  font-size: 2.5em;
   color: #61dafb;
   margin-bottom: 20px;
 `;
@@ -71,6 +75,10 @@ const Description = styled.p`
   line-height: 1.5;
   color: #ffffff;
   margin-bottom: 50px;
+
+  @media (max-width: 600px) {
+    font-size: 1.5em
+  }
 `;
 
 const InteractiveElement = styled.div`

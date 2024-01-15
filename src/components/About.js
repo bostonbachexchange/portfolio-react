@@ -13,18 +13,24 @@ const fadeIn = keyframes`
 `;
 
 const AboutContainer = styled.section`
+  min-height: 100vh;
   background: linear-gradient(45deg, #2d2d2d, #1f1f1f);
   color: #61dafb;
-  padding: 80px;
+  padding: 50px;
   text-align: center;
-  animation: ${fadeIn} 2s ease;
+
 `;
 
 const Title = styled.h2`
-  font-size: 6em;
+  font-size: 4em;
   margin-bottom: 30px;
   color: #61dafb;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  animation: ${fadeIn} 2s ease;
+
+  @media (max-width: 600px) {
+    font-size: 1.5em;
+  }
 `;
 
 const Description = styled.p`
@@ -32,6 +38,10 @@ const Description = styled.p`
   line-height: 1.5;
   color: #ffffff;
   margin-bottom: 50px;
+
+  @media (max-width: 600px) {
+    font-size: 1.5em;
+  }
 `;
 
 const BrainIcon = styled(GiBrain)`
@@ -75,7 +85,6 @@ const About = () => (
     <Description>
       As a creative, focused, and diligent Software Engineer, I strive to develop full stack applications that are intuitive and efficient. My background as a teacher with a Master's of Music degree with a concentration in Piano Performance has given me the ability to manage and prioritize multiple obligations. I have developed necessary communication skills to collaborate as a team and also work independently. It is with this experience that I am able to build creative solutions that build community and increase productivity.
     </Description>
-    <InteractiveElement />
   </AboutContainer>
 );
 
