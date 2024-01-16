@@ -22,7 +22,7 @@ const AboutContainer = styled.section`
 `;
 
 const Title = styled.h2`
-  font-size: 4em;
+  font-size: 3em;
   margin-bottom: 30px;
   color: #61dafb;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
@@ -34,7 +34,7 @@ const Title = styled.h2`
 `;
 
 const Description = styled.p`
-  font-size: 2.5em;
+  font-size: 2.0em;
   line-height: 1.5;
   color: #ffffff;
   margin-bottom: 50px;

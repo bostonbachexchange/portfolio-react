@@ -7,18 +7,33 @@ const ProjectContainer = styled.div`
   color: #ffffff;
   padding: 80px;
   text-align: center;
+
+  @media (max-width: 600px) {
+    padding: 35px;
+  }
+
 `;
 
 const ProjectTitle = styled.h2`
   font-size: 3em;
   margin-bottom: 30px;
   color: #61dafb;
+
+  @media (max-width: 600px) {
+    font-size: 1.5em;
+  }
 `;
 
 const ProjectDescription = styled.p`
   font-size: 1.5em;
   line-height: 1.5;
   margin-bottom: 20px;
+
+  @media (max-width: 600px) {
+    font-size: 1.4em;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  }
 `;
 
 const Technologies = styled.div`
@@ -43,6 +58,10 @@ const ProjectLinks = styled.div`
     &:hover {
       color: #217ac0;
     }
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 23px;
   }
 `;
 

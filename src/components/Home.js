@@ -25,12 +25,15 @@ const HomeContainer = styled.section`
 `;
 
 const Title = styled.h2`
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom: 10px;
   color: #61dafb;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
   animation: ${fadeIn} 2s ease;
 
+  @media (max-width: 600px) {
+    font-size: 1.5em;
+  }
 `;
 
 const Description = styled.p`
@@ -72,7 +75,7 @@ const GraphicLinks = styled.div`
 `;
 
 
-const InteractiveElement = styled.span`
+const InteractiveElement = styled.div`
   position: relative;
   margin-top: 0px;
   margin-bottom: 50px;
@@ -101,7 +104,7 @@ const InteractiveElement = styled.span`
     transform: rotate(-360deg) scale(2.5);
   }
 `;
-const InteractiveLinkedIn = styled.span`
+const InteractiveLinkedIn = styled.div`
   position: relative;
   margin-top: 0px;
   margin-bottom: 50px;

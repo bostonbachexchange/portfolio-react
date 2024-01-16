@@ -1,4 +1,3 @@
-// components/Projects.js
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { AiFillProject, AiFillGithub } from 'react-icons/ai';
@@ -17,19 +16,20 @@ const fadeIn = keyframes`
 const ProjectsContainer = styled.section`
   background: linear-gradient(45deg, #2d2d2d, #1f1f1f);
   color: #61dafb;
-  padding: 40px;
+  padding: 20px; /* Adjusted padding for smaller screens */
   text-align: center;
 `;
 
 const Title = styled.h2`
-  font-size: 3em;
+  font-size: 2em; /* Adjusted font size for smaller screens */
   margin-bottom: 20px;
   color: #61dafb;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  animation: ${fadeIn} 4s ease;
 `;
 
 const ProjectIcon = styled(AiFillProject)`
-  font-size: 3em;
+  font-size: 2em; /* Adjusted font size for smaller screens */
   color: #61dafb;
   margin-bottom: 20px;
 `;
@@ -49,7 +49,7 @@ const ProjectsGrid = styled.div`
 const ProjectCard = styled.div`
   background: #1f1f1f;
   color: #ffffff;
-  padding: 20px;
+  padding: 12px; /* Adjusted padding for smaller screens */
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
@@ -60,12 +60,12 @@ const ProjectCard = styled.div`
 `;
 
 const ProjectTitle = styled.h3`
-  font-size: 2em;
+  font-size: 1.5em; /* Adjusted font size for smaller screens */
   margin-bottom: 10px;
 `;
 
 const ProjectDescription = styled.p`
-  font-size: 1.5em;
+  font-size: 1.2em; /* Adjusted font size for smaller screens */
   line-height: 1.5;
   margin-bottom: 20px;
 `;
@@ -74,12 +74,16 @@ const ProjectDetails = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+
+  @media (max-width: 768px) {
+    margin-top: 16px;
+  }
 `;
 
 const ProjectLink = styled(Link)`
   color: #61dafb;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.2em; /* Adjusted font size for smaller screens */
   margin-bottom: 10px;
   transition: color 0.3s ease;
 
@@ -89,19 +93,19 @@ const ProjectLink = styled(Link)`
 `;
 
 const GithubIcon = styled(AiFillGithub)`
-  font-size: 2em;
+  font-size: 1.5em; /* Adjusted font size for smaller screens */
   margin-right: 10px;
 `;
 
 const Technologies = styled.div`
-  font-size: 1.2em;
+  font-size: 1em; /* Adjusted font size for smaller screens */
   color: #ccc;
   margin-top: 10px;
 `;
 
 const InteractiveElement = styled.div`
   position: relative;
-  margin-top: 30px;
+  margin-top: 20px; /* Adjusted margin for smaller screens */
 
   &:before,
   &:after {

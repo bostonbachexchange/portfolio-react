@@ -8,12 +8,20 @@ const ResumeContainer = styled.div`
   color: #ffffff;
   padding: 80px;
   text-align: center;
+
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
 `;
 
 const ResumeTitle = styled.h2`
   font-size: 3em;
   margin-bottom: 30px;
   color: #61dafb;
+
+  @media (max-width: 600px) {
+    font-size: 1.5em;
+  }
 `;
 
 const DownloadLink = styled.a`
@@ -29,6 +37,10 @@ const DownloadLink = styled.a`
 
   &:hover {
     background: #217ac0;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 8px;
   }
 `;
 

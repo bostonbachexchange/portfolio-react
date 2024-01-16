@@ -32,7 +32,6 @@ const ContactContainer = styled.section`
   color: #61dafb;
   padding: 80px;
   text-align: center;
-  animation: ${fadeIn} 2s ease;
   position: relative;
   overflow: hidden;
 `;
@@ -48,10 +47,12 @@ const Particle = styled.span`
 `;
 
 const Title = styled.h2`
-  font-size: 6em;
+  font-size: 3em;
+  margin-top: 0px;
   margin-bottom: 30px;
   color: #61dafb;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  animation: ${fadeIn} 2s ease;
 
   @media (max-width: 600px) {
     font-size: 1.5em;
