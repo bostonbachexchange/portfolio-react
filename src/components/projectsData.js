@@ -5,11 +5,11 @@ export const projectsData = [
       title: 'Pianist, Jacob Clapper',
       description: 'Professional Musician Bio and Blog Page',
       technologies: 'React, Node.js, MongoDB, Express',
-      githubLink: 'https://github.com/yourusername/project1',
+      githubLink: 'https://github.com/bostonbachexchange/client-jacobclapper',
       projectLink: `/portfolio-react/project1`, // Set route for individual route page
       deployLink: 'https://www.jacobclapper.com', // Add the deployment link
-      frontendLink: 'https://frontend.project1.com', // Add frontend link if applicable
-      backendLink: 'https://backend.project1.com', // Add backend link if applicable
+      frontendLink: 'https://github.com/bostonbachexchange/client-jacobclapper', // Add frontend link if applicable
+      backendLink: 'https://github.com/bostonbachexchange/api-jacobclapper/tree/main', // Add backend link if applicable
     },
     {
       title: 'First Piano Lesson',

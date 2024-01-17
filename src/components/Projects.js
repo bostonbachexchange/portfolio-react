@@ -145,7 +145,7 @@ const Projects = () => (
             <ProjectLink to={project.projectLink}>View Project</ProjectLink>
             <ProjectLink to={project.githubLink}>
               <GithubIcon />
-              GitHub
+              GitHubd
             </ProjectLink>
           </ProjectDetails>
         </ProjectCard>
