@@ -9,7 +9,7 @@ export const projectsData = [
       projectLink: `/portfolio-react/project1`, // Set route for individual route page
       deployLink: 'https://www.jacobclapper.com', // Add the deployment link
       frontendLink: 'https://github.com/bostonbachexchange/client-jacobclapper', // Add frontend link if applicable
-      backendLink: 'https://github.com/bostonbachexchange/api-jacobclapper/tree/main', // Add backend link if applicable
+      backendLink: 'https://github.com/bostonbachexchange/api-jacobclapper/', // Add backend link if applicable
     },
     {
       title: 'First Piano Lesson',
