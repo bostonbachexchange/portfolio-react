@@ -13,7 +13,7 @@ export const projectsData = [
     },
     {
       title: 'First Piano Lesson',
-      description: 'Professional Musician Bio and Blog Page',
+      description: 'Piano Teaching Studio',
       technologies: 'React, Node.js',
       githubLink: 'https://github.com/bostonbachexchange/first-lesson',
       projectLink: `/first-lesson/`,
