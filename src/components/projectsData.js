@@ -12,8 +12,8 @@ export const projectsData = [
       backendLink: 'https://github.com/bostonbachexchange/api-jacobclapper/', // Add backend link if applicable
     },
     {
-      title: 'First Piano Lesson',
-      description: 'Piano Teaching Studio',
+      title: 'Piano Teaching Studio',
+      description: 'Resource for piano student to prepare for lessons and supplement learning.',
       technologies: 'React, Node.js',
       githubLink: 'https://github.com/bostonbachexchange/first-lesson',
       projectLink: `/first-lesson/`,
