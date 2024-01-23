@@ -142,7 +142,7 @@ const Projects = () => (
           <ProjectDescription>{project.description}</ProjectDescription>
           <Technologies>{project.technologies}</Technologies>
           <ProjectDetails>
-            <ProjectLink to={project.projectLink}>View Project</ProjectLink>
+            {project.projectLink && <ProjectLink to={project.projectLink}>View Project</ProjectLink>}
             <ProjectLink to={project.githubLink}>
               <GithubIcon />
               GitHub
